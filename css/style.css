@@ -6,13 +6,17 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff; 
+    color: #333;
     line-height: 1.6;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
-    background-color: #333;
+    background-color: #4A90E2; 
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -26,25 +30,38 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #cce7ff; 
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 20px;
+    background-color: #80adcb; 
+    color: #005b96;
+    padding: 30px;
     text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 .intro {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #e6f9ff; 
 }
 
 .intro-text {
     flex: 1;
     margin-right: 20px;
+    color: #333;
 }
 
 .intro-img {
@@ -54,27 +71,33 @@ header {
 .intro-img img {
     width: 100%;
     height: auto;
+    border: 3px solid #fff; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #eaeaea;
+    background-color: #d6eff7; 
 }
 
 .main-text {
     flex: 1;
     margin-right: 20px;
+    color: #004d66; 
 }
 
 .main-img img {
     width: 100%;
     height: auto;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .additional-content {
     padding: 20px;
+    background-color: #ecfaff; 
 }
 
 .text-img-row {
@@ -86,21 +109,23 @@ header {
 .text {
     flex: 1;
     margin-right: 20px;
+    color: #333;
 }
 
 .img img {
     width: 100%;
     height: auto;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #4A90E2; 
+    color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
 }
-
 
 @keyframes bounce {
     0%, 100% {
@@ -113,5 +138,11 @@ footer {
 
 .bounce {
     display: inline-block;
-    animation: bounce 2s infinite; 
+    animation: bounce 2s infinite;
+    color: #fff;
+    font-weight: bold;
+    background-color: #4A90E2;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
