@@ -237,7 +237,7 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
-    background-color: #009879;
+    background-color: #4A90E2;
     color: #ffffff;
     text-align: left;
 }
@@ -248,11 +248,14 @@ footer {
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #4A90E2
+}
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #80d6fe;
 }
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #80d6fe;
 }
  
 .font1 {
