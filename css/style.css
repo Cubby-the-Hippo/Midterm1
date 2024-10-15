@@ -269,3 +269,15 @@ footer {
 .font3 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#myDiv {
+    transform: rotateX(150deg);
+  }
+
+#myDiv {
+    transform: rotateY(150deg);
+  }
+
+#myDiv {
+    transform: rotateZ(90deg);
+  }
