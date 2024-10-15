@@ -281,3 +281,51 @@ footer {
 #myDiv {
     transform: rotateZ(90deg);
   }
+
+
+
+@keyframes colchange{
+
+    0%{background-color: rgb(245, 14, 168);}
+
+    5%{background-color: rgb(241, 14, 245);}
+
+    10%{background-color: rgb(191, 14, 245);}
+
+    15%{background-color: rgb(160, 14, 245);}
+
+    20%{background-color: rgb(99, 14, 245);}
+
+    25%{background-color: rgb(76, 14, 245);}
+
+    30%{background-color: rgb(14, 14, 245);}
+
+    35%{background-color: rgb(14, 49, 245);}
+
+    40%{background-color: rgb(14, 118, 245);}
+
+    45%{background-color: rgb(14, 141, 245);}
+
+    50%{background-color: rgb(14, 183, 245);}
+
+    55%{background-color: rgb(14, 141, 245);}
+
+    60%{background-color: rgb(14, 118, 245);}
+
+    65%{background-color: rgb(14, 49, 245);}
+
+    70%{background-color: rgb(14, 14, 245);}
+
+    75%{background-color: rgb(76, 14, 245);}
+
+    80%{background-color: rgb(99, 14, 245);}
+
+    85%{background-color: rgb(160, 14, 245);}
+
+    90%{background-color: rgb(191, 14, 245);}
+
+    95%{background-color: rgb(241, 14, 245);}
+
+    100%{background-color: rgb(245, 14, 168);}
+
+}
