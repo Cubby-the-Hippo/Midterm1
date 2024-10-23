@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "quador", serif;
     background-color: #f0f8ff; 
     color: #333;
     line-height: 1.6;
@@ -238,59 +238,65 @@ footer {
 }
 
 .font1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "quador", serif;
+font-weight: 400;
+font-style: normal;
 }
 
-.font2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  @keyframes colchange{
+ 
+    0%{color: rgb(245, 14, 168);}
+ 
+    5%{color: rgb(241, 14, 245);}
+ 
+    10%{color: rgb(191, 14, 245);}
+ 
+    15%{color: rgb(160, 14, 245);}
+ 
+    20%{color: rgb(99, 14, 245);}
+ 
+    25%{color: rgb(76, 14, 245);}
+ 
+    30%{color: rgb(14, 14, 245);}
+ 
+    35%{color: rgb(14, 49, 245);}
+ 
+    40%{color: rgb(14, 118, 245);}
+ 
+    45%{color: rgb(14, 141, 245);}
+ 
+    50%{color: rgb(14, 183, 245);}
+ 
+    55%{color: rgb(14, 141, 245);}
+ 
+    60%{color: rgb(14, 118, 245);}
+ 
+    65%{color: rgb(14, 49, 245);}
+ 
+    70%{color: rgb(14, 14, 245);}
+ 
+    75%{color: rgb(76, 14, 245);}
+ 
+    80%{color: rgb(99, 14, 245);}
+ 
+    85%{color: rgb(160, 14, 245);}
+ 
+    90%{color: rgb(191, 14, 245);}
+ 
+    95%{color: rgb(241, 14, 245);}
+ 
+    100%{color: rgb(245, 14, 168);}
+ 
 }
 
-.font3 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#myDiv {
-    transform: rotateX(150deg);
-}
-
-#myDiv {
-    transform: rotateY(150deg);
-}
-
-#myDiv {
-    transform: rotateZ(90deg);
-}
-
-h1 {
+.colchange{
     width: 300mm;
     height: 25mm;
-    color: rgb(245, 14, 168);
-    animation-name: colchange;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    color: rgb(252, 252, 252);
-}
- 
-@keyframes colchange {
-    0% { color: rgb(245, 14, 168); }
-    5% { color: rgb(241, 14, 245); }
-    10% { color: rgb(191, 14, 245); }
-    15% { color: rgb(160, 14, 245); }
-    20% { color: rgb(99, 14, 245); }
-    25% { color: rgb(76, 14, 245); }
-    30% { color: rgb(14, 14, 245); }
-    35% { color: rgb(14, 49, 245); }
-    40% { color: rgb(14, 118, 245); }
-    45% { color: rgb(14, 141, 245); }
-    50% { color: rgb(14, 183, 245); }
-    55% { color: rgb(14, 141, 245); }
-    60% { color: rgb(14, 118, 245); }
-    65% { color: rgb(14, 49, 245); }
-    70% { color: rgb(14, 14, 245); }
-    75% { color: rgb(76, 14, 245); }
-    80% { color: rgb(99, 14, 245); }
-    85% { color: rgb(160, 14, 245); }
-    90% { color: rgb(191, 14, 245); }
-    95% { color: rgb(241, 14, 245); }
-    100% { color: rgb(245, 14, 168); }
-}
+ color: rgb(245, 14, 168);
+ animation-name: colchange;
+ animation-duration: 1s;
+ animation-iteration-count: infinite;
+ color: rgb(252, 252, 252);
+ }
+
