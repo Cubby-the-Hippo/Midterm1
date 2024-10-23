@@ -5,102 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Types of Skis</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Image transition effect */
+        .intro-img img, .main-content img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .intro-img img:hover, .main-content img:hover {
+            transform: scale(1.1); 
+        }
+
+        /* Text shadow for headings */
+        h1, h3 {
+            text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
+        }
+
+        /* Hover effect for headings */
+        h1:hover, h3:hover {
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
+            color: #ffb6b6;
+        }
+
+        /* Flexbox for text and image layout */
+        .text-img-row {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .intro-img img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<style>
-    /*NEW FEATURE 1*/
-    .intro-img img, .main-content img {
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .intro-img img:hover, .main-content img:hover {
-        transform: scale(1.1); 
-    }
-
-    /*NEW FEATURE 2*/
-    h1, h3 {
-        text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
-    }
-
-    /*NEW FEATURE 3*/
-    h1:hover, h3:hover {
-        text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
-        color: #ffb6b6;
-    }
-</style>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how.html">How To Ski</a></li>
-            <li><a href="types.html" class="active">Types of Skis</a></li>
-            <li><a href="gear.html">Skiing Gear</a></li>
-            <li><a href="etiquette.html">Mountain Etiquette</a></li>
-            <li><a href="guide.html">Mountain Guide</a></li>
-            <li><a href="resorts.html">U.S. Ski Resorts</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how.html">How To Ski</a></li>
+        <li><a href="types.html" class="active">Types of Skis</a></li>
+        <li><a href="gear.html">Skiing Gear</a></li>
+        <li><a href="etiquette.html">Mountain Etiquette</a></li>
+        <li><a href="guide.html">Mountain Guide</a></li>
+        <li><a href="resorts.html">U.S. Ski Resorts</a></li>
+    </ul>
+</nav>
 
+<header>
+    <h1>Types of Skis</h1>
+</header>
 
-    <header>
-        <h1>Types of Skis</h1>
-    </header>
+<section class="intro">
+    <div class="intro-text">
+        <p>This page will explain the different types of skis and which type you should choose based on your skiing preferences and needs.</p>
+    </div>
+    <div class="intro-img">
+        <img src="images/Types-of-skis-header-380x230.jpg" alt="Overview of Different Types of Skis">
+    </div>
+</section>
 
-    <section class="intro">
-        <div class="intro-text">
-            <p>
-                This page will explain the different types of skis and which type you should choose based on your skiing preferences and needs.
-            </p>
+<section class="main-content">
+    <div class="main-text">
+        <h3>Why Choosing the Right Type of Skis Matters</h3>
+        <p>Choosing the right type of skis is crucial for your skiing experience. Different skis are suited to different terrains and skiing styles, so selecting the one that matches your needs will enhance your performance and enjoyment.</p>
+    </div>
+</section>
+
+<section class="additional-content">
+    <div class="text-img-row">
+        <div class="text">
+            <h3>Park Skis</h3>
+            <p>Park skis are ideal for freestyle skiing and terrain parks, designed to handle jumps and tricks.</p>
         </div>
         <div class="intro-img">
-            <img src="images/Types-of-skis-header-380x230.jpg" alt="Overview of Different Types of Skis">
+            <img src="images/park skis.webp" alt="Park Skis">
         </div>
-    </section>
+    </div>
 
-    <section class="main-content">
-        <div class="main-text">
-            <h3>Why Choosing the Right Type of Skis Matters</h3>
-            <p>
-                Choosing the right type of skis is crucial for your skiing experience. Different skis are suited to different terrains and skiing styles, so choosing the one that matches your needs will make you perform better and enjoy the experience more.
-            </p>
+    <div class="text-img-row">
+        <div class="text">
+            <h3>Powder Skis</h3>
+            <p>Powder skis are designed for deep snow, providing a wider platform to help float on powdery surfaces.</p>
         </div>
-    </section>
-
-    <section class="additional-content">
-        <div class="text-img-row">
-            <div class="text">
-                <h3>Park Skis</h3>
-                <p>Park skis are ideal for freestyle skiing and terrain parks, designed to handle jumps and tricks.</p>
-            </div>
-            <div class="intro-img">
-                <img src="images/park skis.webp" alt="Park Skis">
-            </div>
+        <div class="intro-img">
+            <img src="images/powder skis.webp" alt="Powder Skis">
         </div>
+    </div>
 
-        <div class="text-img-row">
-            <div class="text">
-                <h3>Powder Skis</h3>
-                <p>Powder skis are designed for deep snow.</p>
-            </div>
-            <div class="intro-img">
-                <img src="images/powder skis.webp" alt="Powder Skis">
-            </div>
+    <div class="text-img-row">
+        <div class="text">
+            <h3>All Mountain Skis</h3>
+            <p>All mountain skis are versatile and perform well on various terrains, from groomed runs to varying snow conditions.</p>
         </div>
-
-        <div class="text-img-row">
-            <div class="text">
-                <h3>All Mountain Skis</h3>
-                <p>All mountain skis are versatile and perform well on various terrains, from groomed runs to varying snow conditions.</p>
-            </div>
-            <div class="intro-img">
-                <img src="images/all mountain.webp" alt="All Mountain Skis">
-            </div>
+        <div class="intro-img">
+            <img src="images/all mountain.webp" alt="All Mountain Skis">
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <p>This page is by Ethan</p>
-    </footer>
+<footer>
+    <p>This page is by Ethan</p>
+</footer>
 
 </body>
 </html>

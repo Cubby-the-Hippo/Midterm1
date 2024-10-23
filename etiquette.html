@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skiing Etiquette</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Text shadow for headings */
+        h1, h2, h3 {
+            text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
+        }
+
+        /* Hover effect for headings */
+        h1:hover, h2:hover, h3:hover {
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
+            color: #ffb6b6;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: lightgray;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Flexbox for layout */
+        .text-img-row {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
 </head>
-<style>
-     /*NEW FEATURE 2*/
-     h1, h3 {
-        text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
-    }
-    /*NEW FEATURE 3*/
-    h1:hover, h3:hover {
-        text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
-        color: #ffb6b6;
-    }
-  </style>
 <body>
+
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -36,69 +72,67 @@
 
 <section class="intro">
     <div class="intro-text">
-        <h2>Why its important:</h2>
-        <p> As you become a more and more advanced skier not is knowing your way around the mountain crucial but also knowing and understanding the common etiquette and set of rules that all skiers abide by. Hopefully after reading this page you will have a much better understanding of how you can follow the common rules of the mountain to help keep you and others safer while skiing.</p>
+        <h2>Why It's Important:</h2>
+        <p>As you become a more advanced skier, understanding the common etiquette and rules that all skiers abide by is crucial. This knowledge helps keep you and others safe on the mountain.</p>
         <h2>Getting On and Off the Chairlift</h2>
         <ul>
-            <li>50% of all ski or snowboard related injuries happen either getting on or off the chairlift which is why its extremely important to understand how to properly navigate the lines and some tips for getting on and off.</li>
-            <li>Most resorts there will be sectioned off areas for the lift lines but if not try and stay out of areas with downhill traffic as you wait. Once you get through the line wait until its your groups turn and then slide foreward to the line and wait for the chair, when its right beneath you sit down into it and remember to put the bar down.</li>
-            <li>As you get off remember to put the safety bar up and keep your ski tips up as you come into the landing area. Then when its time stand up and push off from the chair making sure that you dont crash into any one from your chairs group or people in front of you.</li>
+            <li>50% of ski or snowboard-related injuries happen during the process of getting on or off the chairlift. Therefore, understanding how to navigate the lines and tips for getting on and off is extremely important.</li>
+            <li>Most resorts have designated areas for lift lines; if not, try to stay out of areas with downhill traffic. Once you get through the line, wait until it's your group's turn. When the chair is right beneath you, sit down and remember to put the bar down.</li>
+            <li>As you get off, put the safety bar up and keep your ski tips up when landing. Stand up and push off from the chair, making sure not to crash into anyone from your group or those in front of you.</li>
         </ul>
     </div>
     <div class="intro-img">
-        <img src="images/dontdothisphoto.jpg" alt="Intro Image">
+        <img src="images/dontdothisphoto.jpg" alt="Don't Do This" style="width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
     </div>
 </section>
 
 <h2 style="color: red;">Summary Table:</h2>
-
-<table class="styled-table" style="width: 100%;">
+<table>
     <tr style="font-size: large;">
         <th>Situation</th>
         <th>Safe Action</th>
     </tr>
     <tr>
         <td>Merging Runs</td>
-        <td>As two runs merge slow down and cautuisly continue onto the new run</td>
+        <td>Slow down and cautiously continue onto the new run.</td>
     </tr>
     <tr>
         <td>Cat-Tracks</td>
-        <td>Skiers on the cat-track have right of way so safely join or exit when safe</td>
+        <td>Skiers on the cat-track have the right of way; join or exit when safe.</td>
     </tr>
     <tr>
         <td>Chairlifts</td>
-        <td>Slow down as you near the line and stay in your line</td>
+        <td>Slow down as you near the line and stay in your designated line.</td>
     </tr>
     <tr>
-        <td>Around the Lodge:  </td>
-        <td> Slow down as you get close and place your skis on the racks</td>
+        <td>Around the Lodge</td>
+        <td>Slow down as you approach and place your skis on the racks.</td>
     </tr>
 </table> 
-
 
 <section class="main-content">
     <div class="main-text">
         <h2>On The Mountain:</h2>
-        <h2>Merging and entering Runs:</h2>
-        <p>One place with lots of injurys is runs that merge together as skiers's often dont see each other and crash. As you merge be sure to look around you and up the merging run to make sure you can continue.The same apply's when you are entering a new run, you dont have right of way and so make sure it is safe for you to enter before going.</p>
-        <h2>Cat-Tracks:</h2>
-        <p>Cat-tracks are one of the main routes that skiers use to traverse across the mountain or get to a different section of the resort. As a general rule the people on the cat-track have the right of way and so if you are entering wait until theres a safe opening, when you are exiting the right of way can be tricky so try and make sure you dont enter anyone elses path and youll be safe.</p>
-        <h2> Chairlifts:</h2>
-        <p>As i mentioned above this can be a dangerous area so make sure to be cuatuis as you aproach the lift lines and make sure to watch out for out of control skiers making a sprint for the lifts</p>
+        <h3>Merging and Entering Runs:</h3>
+        <p>In areas where runs merge, many injuries occur because skiers often don't see each other. When merging, be sure to look around and up the merging run to ensure it's safe to continue. Remember, you don't have the right of way when entering a new run, so make sure it’s safe before proceeding.</p>
+        <h3>Cat-Tracks:</h3>
+        <p>Cat-tracks are common routes for skiers to traverse the mountain. Generally, those on the cat-track have the right of way, so wait for a safe opening before entering. When exiting, be careful not to cross others' paths.</p>
+        <h3>Chairlifts:</h3>
+        <p>This can be a dangerous area, so be cautious as you approach the lift lines. Watch out for out-of-control skiers making a sprint for the lifts.</p>
     </div>
     <div class="intro-img">
-        <img src="images/busyrun.webp" alt="Intro Image">
+        <img src="images/busyrun.webp" alt="Busy Run" style="width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
     </div>
 </section>
 
 <section class="intro">
     <div class="intro-text">
         <h2>Ski Lodge</h2>
-        <p> Whether you headed into the lodge for lunch or as you finish your day at the bottom of the mountain this can always be a dangerous place as people will often come speeding right up to the lodge doging and swerving through the crowds. As you get close try to slow down and when you find an open space stop and take off your skis, remember to pick them up and put them on the rack instead of leaving them planted in the snow as they could blow away or get taken.</p>
-    <p> On the right there is a video covering much of what i talked about and some other tips for common skiing etiquette:</p>
+        <p>Whether you're headed into the lodge for lunch or finishing your day at the bottom of the mountain, this area can be dangerous as people often come speeding right up to the lodge, dodging and swerving through crowds. As you approach, try to slow down and find an open space to stop and remove your skis. Remember to pick them up and place them on the rack instead of leaving them in the snow, as they could blow away or get taken.</p>
+        <p>Below is a video covering much of what I've talked about, along with other tips for common skiing etiquette:</p>
     </div>
-    <div class="intro-img">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2bWwNO7Usf8?si=fcLDc8hkwjWsbh1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+    <div class="video-section">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2bWwNO7Usf8?si=fcLDc8hkwjWsbh1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </section>
 

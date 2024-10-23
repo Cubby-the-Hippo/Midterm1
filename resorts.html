@@ -3,91 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resorts</title>
+    <title>Ski Resorts</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Text shadow for headings */
+        h1, h2 {
+            text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
+        }
+
+        /* Hover effect for headings */
+        h1:hover, h2:hover {
+            text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
+            color: #ffb6b6;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: lightgray;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Flexbox for layout */
+        .text-img-row {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .intro-img img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body>    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="how.html">How To Ski</a></li>
-            <li><a href="types.html">Types of Skis</a></li>
-            <li><a href="gear.html">Skiing Gear</a></li>
-            <li><a href="etiquette.html">Mountain Etiquette</a></li>
-            <li><a href="guide.html" class="active">Mountain Guide</a></li>
-            <li><a href="resorts.html">U.S. Ski Resorts</a></li>
-        </ul>
-    </nav>
+<body>
 
-    <header id="bannerimage2"> <!--NEW FEATURE-->
-        <h1 style="color: purple;">Ski resorts in the us</h1>
-        <h2 style="color: purple;">Where to stay</h2>
-    </header>
-    
-    <section class="main-content">
-        <div class="main-text">
-            <h2>Aspen Snowmass, Colorado:</h2>
-            <p>Aspen Snowmass offers over 5,500 acres of skiable terrain across four mountains, suitable for skiers of all levels. It's known for its luxury vibe, with top-notch dining, après-ski, and shopping experiences. The picturesque town of Aspen adds to its charm with rich culture and nightlife.</p>
-        </div>
-    </section>
-    
-    <section class="additional-content">
-        <div class="text">
-            <h2>Jackson Hole, Wyoming:</h2>
-            <p>Renowned for its challenging slopes, Jackson Hole is a favorite for expert skiers and thrill-seekers. With steep terrain and deep powder, it’s perfect for adventure. The resort is also near Yellowstone and Grand Teton National Parks, offering stunning scenery.</p>
-    </section>
-    
-    <section class="main-content">
-        <div class="main-text">
-            <h2>Park City, Utah:</h2>
-            <p>Park City is the largest ski resort in the U.S., offering diverse runs and easy access from Salt Lake City. It’s ideal for families and skiers of all skill levels, with plenty of lodging and dining options. The town of Park City is known for its charm and the annual Sundance Film Festival.            </p>
-        </div>
-    </section>
-    
-    <section class="additional-content">
-        <div class="text">
-            <h2>Vail, Colorado:</h2>
-            <p>Vail boasts one of the largest single-mountain ski resorts in the U.S., with over 5,000 acres of varied terrain. It’s famous for its expansive back bowls and vibrant village atmosphere. With excellent snow conditions and luxurious amenities, it attracts skiers worldwide.</p>
-        </div>
-    </section>
-    
-    <section class="main-content">
-        <div class="main-text">
-            <h2>Breckenridge, Colorado:</h2>
-            <p>Known for its high elevation and historic mining town, Breckenridge offers a mix of terrain for beginners to experts. The resort’s five peaks provide expansive skiing options and breathtaking mountain views. It's a laid-back resort with a lively après-ski scene.            </p>
-        </div>
-    </section> 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how.html">How To Ski</a></li>
+        <li><a href="types.html">Types of Skis</a></li>
+        <li><a href="gear.html">Skiing Gear</a></li>
+        <li><a href="etiquette.html">Mountain Etiquette</a></li>
+        <li><a href="guide.html">Mountain Guide</a></li>
+        <li><a href="resorts.html" class="active">U.S. Ski Resorts</a></li>
+    </ul>
+</nav>
 
-    <h2 style="color: blueviolet;">Unique quality table:</h2>
+<header id="bannerimage2">
+    <h1 style="color: purple;">Ski Resorts in the U.S.</h1>
+    <h2 style="color: purple;">Where to Stay</h2>
+</header>
 
-    <table class="styled-table" style="width: 100%;">
-        <tr style="font-size: large;">
-            <th>Ski resort</th>
-            <th>Best quality</th>
-        </tr>
-        <tr>
-            <td>Aspen Snowmass:</td>
-            <td>It's known for its celebrity clientele and high-end experiences both on and off the slopes.</td>
-        </tr>
-        <tr>
-            <td>Jackson Hole:</td>
-            <td>It boasts some of the steepest inbound terrain in North America, perfect for advanced skiers.</td>
-        </tr>
-        <tr>
-            <td>Park city:</td>
-            <td>It’s home to the largest ski area in the U.S., with over 7,300 acres of skiable terrain.</td>
-        </tr>
-        <tr>
-            <td>Vail:</td>
-            <td>Its famous back bowls offer expansive, wide-open skiing that feels endless on a powder day.</td>
-        </tr>
-        <tr>
-            <td>Breckenridge:</td>
-            <td>At nearly 13,000 feet, it has one of the highest chairlifts in North America, offering incredible views and thrilling runs.</td>
-        </tr>
-    </table> 
+<section class="main-content">
+    <div class="main-text">
+        <h2>Aspen Snowmass, Colorado:</h2>
+        <p>Aspen Snowmass offers over 5,500 acres of skiable terrain across four mountains, suitable for skiers of all levels. It's known for its luxury vibe, with top-notch dining, après-ski, and shopping experiences. The picturesque town of Aspen adds to its charm with rich culture and nightlife.</p>
+    </div>
+</section>
 
-    <footer>
-        <p>reed</p>
-    </footer>
+<section class="main-content">
+    <div class="main-text">
+        <h2>Jackson Hole, Wyoming:</h2>
+        <p>Renowned for its challenging slopes, Jackson Hole is a favorite for expert skiers and thrill-seekers. With steep terrain and deep powder, it’s perfect for adventure. The resort is also near Yellowstone and Grand Teton National Parks, offering stunning scenery.</p>
+    </div>
+</section>
+
+<section class="main-content">
+    <div class="main-text">
+        <h2>Park City, Utah:</h2>
+        <p>Park City is the largest ski resort in the U.S., offering diverse runs and easy access from Salt Lake City. It’s ideal for families and skiers of all skill levels, with plenty of lodging and dining options. The town of Park City is known for its charm and the annual Sundance Film Festival.</p>
+    </div>
+</section>
+
+<section class="main-content">
+    <div class="main-text">
+        <h2>Vail, Colorado:</h2>
+        <p>Vail boasts one of the largest single-mountain ski resorts in the U.S., with over 5,000 acres of varied terrain. It’s famous for its expansive back bowls and vibrant village atmosphere. With excellent snow conditions and luxurious amenities, it attracts skiers from around the world.</p>
+    </div>
+</section>
+
+<section class="main-content">
+    <div class="main-text">
+        <h2>Breckenridge, Colorado:</h2>
+        <p>Known for its high elevation and historic mining town, Breckenridge offers a mix of terrain for beginners to experts. The resort’s five peaks provide expansive skiing options and breathtaking mountain views. It's a laid-back resort with a lively après-ski scene.</p>
+    </div>
+</section>
+
+<h2 style="color: blueviolet;">Unique Quality Table:</h2>
+<table class="styled-table">
+    <tr style="font-size: large;">
+        <th>Ski Resort</th>
+        <th>Best Quality</th>
+    </tr>
+    <tr>
+        <td>Aspen Snowmass</td>
+        <td>Known for its celebrity clientele and high-end experiences both on and off the slopes.</td>
+    </tr>
+    <tr>
+        <td>Jackson Hole</td>
+        <td>Boasts some of the steepest inbound terrain in North America, perfect for advanced skiers.</td>
+    </tr>
+    <tr>
+        <td>Park City</td>
+        <td>Home to the largest ski area in the U.S., with over 7,300 acres of skiable terrain.</td>
+    </tr>
+    <tr>
+        <td>Vail</td>
+        <td>Famous back bowls offer expansive, wide-open skiing that feels endless on a powder day.</td>
+    </tr>
+    <tr>
+        <td>Breckenridge</td>
+        <td>At nearly 13,000 feet, it has one of the highest chairlifts in North America, offering incredible views and thrilling runs.</td>
+    </tr>
+</table>
+
+<footer>
+    <p>Page created by Reed</p>
+</footer>
 </body>
 </html>
