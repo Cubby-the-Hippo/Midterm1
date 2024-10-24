@@ -5,9 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+
+
+
     <style>
+
+/* Fixed the grid stuff in the style not sure if Ethan and Reed will come through but I just did it since I don't want to let down my boy Ben Raskin */
+
+
         table, th, td {
             border: 1px solid black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto 25%;
+        }
+
+        .grid-item {
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .header-section {
+            grid-column: 1 / span 3; 
+            grid-row: 1;
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            height: 100px; 
+            background-color: lightblue; 
+            border-color: rgb(104, 175, 237);
+            border-style: solid;
+        }
+
+        .header-section h1 {
+            font-size: 48px; 
+            font-weight: bold; 
+            margin: 0; 
+        }
+
+        .maincontent-section {
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            border-color: rgb(104, 175, 237);
+            border-style: solid;
+        }
+
+        .maincontent2-section {
+            grid-column: 1 / span 3;
+            grid-row: 3;
+            background-color: #4A90E2;
+            border-color: rgb(104, 175, 237);
+            border-style: solid;
+        }
+
+        .maincontent3-section {
+            grid-column: 1 / span 3;
+            grid-row: 4;
+            background-color: #4A90E2;
+            border-color: rgb(104, 175, 237);
+            border-style: solid;
+        }
+
+        .maincontent4-section {
+            grid-column: 1 / span 3;
+            grid-row: 5;
+            background-color: #4A90E2;
+            border-color: rgb(104, 175, 237);
+            border-style: solid;
+        }
+
+        .bottomtable {
+            grid-column: 2 / span 1;
+            grid-row: 6;
+            background-color: rgb(0, 131, 253);
+            border-color: blue;
+            border-style: dashed;
         }
     </style>
 </head>
@@ -24,68 +101,79 @@
         </ul>
     </nav>
 
-    <header>
-        <h1>Skiing 101</h1>
-    </header>
+    <div class="grid-container">
+        <div class="header-section">
+            <h1>Skiing 101</h1>
+        </div>
 
-    <section class="intro">
-        <div class="intro-text">
-            <p><span class="bounce" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is me either doing a backflip or a frontflip; I forgot which one since I do too many tricks!🤣</span></p>
+        <div class="maincontent-section">
+            <section class="intro">
+                <div class="intro-text">
+                    <p><span class="bounce" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is me either doing a backflip or a frontflip; I forgot which one since I do too many tricks!🤣</span></p>
+                </div>
+                <div class="intro-img">
+                    <img src="images/IMG_9432a.1.jpg" alt="Intro Image">
+                </div>
+            </section>
         </div>
-        <div class="intro-img">
-            <img src="images/IMG_9432a.1.jpg" alt="Intro Image">
-        </div>
-    </section>
 
-    <section class="main-content">
-        <div class="main-text">
-            <h2>What is skiing?</h2>
-            <p>Skiing is where you go down a snowy mountain on a pair of sticks and try to make it down safely.</p>
-            <p class="flash" style="margin-top: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Don't be this guy!</p> 
+        <div class="maincontent2-section">
+            <section class="main-content">
+                <div class="main-text">
+                    <h2>What is skiing?</h2>
+                    <p>Skiing is where you go down a snowy mountain on a pair of sticks and try to make it down safely.</p>
+                    <p class="flash" style="margin-top: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Don't be this guy!</p> 
+                </div>
+                <div class="main-img">
+                    <img src="images/istockphoto-501798962-612x612.jpg" alt="Snowbank">
+                </div>
+                <div class="arrow"></div> 
+            </section>
         </div>
-        <div class="main-img">
-            <img src="images/istockphoto-501798962-612x612.jpg" alt="Snowbank">
-        </div>
-        <div class="arrow"></div> 
-    </section>
 
-    <section class="additional-content">
-        <div class="text-img-row">
-            <div class="text">
-                <p>These are some of Ben, Ethan, and Reed's skiing fails caught on camera! 😂</p>
-            </div>
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2UOB9AfHrPY?si=Z_MU2LqNMFyP6F_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+        <div class="maincontent3-section">
+            <section class="additional-content">
+                <div class="text-img-row">
+                    <div class="text">
+                        <p>These are some of Ben, Ethan, and Reed's skiing fails caught on camera! 😂</p>
+                    </div>
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2UOB9AfHrPY?si=Z_MU2LqNMFyP6F_-" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <table class="styled-table" style="width: 100%;">
-        <thead>
-            <tr>
-                <th>Who</th>
-                <th>Fail</th>
-                <th>Injury</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ben Raskin</td>
-                <td>Face first into snowbank after going 200 MPH+</td>
-                <td>Destroyed the snowbank</td>
-            </tr>
-            <tr>
-                <td>Ethan Lu</td>
-                <td>Attempted to do a cork 720 on one leg and went face first into a tree</td>
-                <td>Broke the tree</td>
-            </tr>
-            <tr>
-                <td>Reed Berry</td>
-                <td>Tried to do a baby jump at the ski park and went face first into the ground</td>
-                <td>Hurt feelings</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="bottomtable">
+            <table class="styled-table" style="width: 100%;">
+                <h2 style="text-align: center;"> Ben, Ethan, and Reed's Most Horrific Skiing Incidents</h2>
+                <thead>
+                    <tr>
+                        <th>Who</th>
+                        <th>Fail</th>
+                        <th>Injury</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ben Raskin</td>
+                        <td>Face first into snowbank after going 200 MPH+</td>
+                        <td>Destroyed the snowbank</td>
+                    </tr>
+                    <tr>
+                        <td>Ethan Lu</td>
+                        <td>Attempted to do a cork 720 on one leg and went face first into a tree</td>
+                        <td>Broke the tree</td>
+                    </tr>
+                    <tr>
+                        <td>Reed Berry</td>
+                        <td>Tried to do a baby jump at the ski park and went face first into the ground</td>
+                        <td>Hurt feelings</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <footer>
         <p>Alex Peng</p>
