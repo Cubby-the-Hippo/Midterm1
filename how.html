@@ -6,7 +6,51 @@
     <title>How To Ski</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+/* !!!--> Not sure if Alex and the other guys will come through and i dont want to mess up the main style.css folder for the tea mwith the cssGrid but i really want to make sure that i get a good grade and meet al the requirments so here is one i made today ater class that splits up the page using the grid into 3 main sections plus another at the bottom for the video*/
 
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto 25%;
+}
+.grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.header-section {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+.maincontent-section {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+
+.maincontent2-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    background-color: #4A90E2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+
+.bottomvid {
+    grid-column: 2 / span 1;
+    grid-row: 4;
+    background-color: lightpink;
+    border-color: blue;
+    border-style: dashed;
+}
+
+</style>
 
 
 <body>
@@ -23,10 +67,18 @@
         </ul>
     </nav>
 
-    <header id="bannerimage">
-        <h1>Beginners Guide to Skiing</h1>
-    </header>
 
+<div class="grid-container">
+
+    <div class="header-section">
+        <header id="bannerimage">
+            <h1 class="colchange">Beginners Guide to Skiing</h1>
+         <!-- New Feature 1 (Title changing colors) 
+              New Feature 4 above (Banner image section in the header) -->
+        </header>
+    </div>
+
+<div class="maincontent-section">
     <section class="main-content">
         <div class="main-text">
             <h2>Step 1: Gather Your Gear and Apparel</h2>
@@ -61,15 +113,19 @@
             <p>Getting better at skiing, like many sports, depends on practice and a willingness to try new things. Even experienced skiers continue to learn and improve through practice.</p>
         </div>
     </section>
+</div>
 
+<div class="maincontent2-section">
     <h3 style="text-align: center; font-size: x-large;">Other Info:</h3>
-    <p>After reading this guide, you should have a good understanding of the basics of skiing. For more information, watch the video below, which covers much of what we've discussed while showing skiers on a mountain. Skiing is a fantastic lifelong sport, and I hope you continue to practice and learn!</p>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_yfFGDuJ2g0?si=9tSKRmiJry-7vyNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p style="text-align: left;">After reading this guide, you should have a good understanding of the basics of skiing. For more information, watch the video below, which covers much of what we've discussed while showing skiers on a mountain. Skiing is a fantastic lifelong sport, and I hope you continue to practice and learn!</p>
+</div>
 
-    <h2 class="myDiv">Have Fun Skiing!</h2>
-<h2> Have Fun Skiing!!</h2>
+<div class="bottomvid">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_yfFGDuJ2g0?si=9tSKRmiJry-7vyNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2 style="text-align: center;"> Stay Safe and Have Fun Skiing!!</h2>
+</div>
 
+</div>
     <footer>
         <p>How to Ski Page By: Ben Raskin</p>
     </footer>

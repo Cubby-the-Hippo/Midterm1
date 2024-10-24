@@ -7,15 +7,73 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-     /*NEW FEATURE 3*/
+    /* Like my other page i wanted to make sure that the css Grid was implemented correcty but didnt want to over step and add what i a using to the style.css as it would break so this page has a simple Header then 4 main contents one after the other with a video at the bottom css grid style*/
+     /*NEW FEATURE 2*/
      h1, h3 {
         text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
     }
-    /*NEW FEATURE 4*/
+    /*NEW FEATURE 3*/
     h1:hover, h3:hover {
         text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
         color: #ffb6b6;
     }
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto 25%;
+}
+.grid-item {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.header-section {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+.maincontent-section {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+
+.maincontent2-section {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    background-color: #4A90E2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+
+.maincontent3-section {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    background-color: #4A90E2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+.maincontent4-section {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    background-color: #4A90E2;
+    border-color: rgb(104, 175, 237);
+    border-style: solid;
+}
+
+.bottomvid {
+    grid-column: 2 / span 1;
+    grid-row: 6;
+    background-color: lightpink;
+    border-color: blue;
+    border-style: dashed;
+}
+
   </style>
 <body>
 
@@ -31,10 +89,15 @@
     </ul>
 </nav>
 
-<header>
-    <h1>Basic Skiing Etiquette</h1>
-</header>
+<div class="grid-container">
 
+<div class="header-section">
+    <header id="bannerimage">
+         <h1 class="colchange">Basic Skiing Etiquette</h1>
+    </header>
+</div>
+
+<div class="maincontent-section">
 <section class="intro">
     <div class="intro-text">
         <h2>Why It's Important:</h2>
@@ -50,8 +113,10 @@
         <img src="images/dontdothisphoto.jpg" alt="Don't Do This" style="width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
     </div>
 </section>
+</div>
 
-<h2 style="color: red;">Summary Table:</h2>
+<div class="maincontent2-section">
+<h2 style="color: red; text-align: center; font-size: xx-large;">Summary Table:</h2>
 <table class="styled-table">
     <tr style="font-size: large;">
         <th>Situation</th>
@@ -74,7 +139,9 @@
         <td>Slow down as you approach and place your skis on the racks.</td>
     </tr>
 </table> 
+</div>
 
+<div class="maincontent3-section">
 <section class="main-content">
     <div class="main-text">
         <h2>On The Mountain:</h2>
@@ -89,18 +156,27 @@
         <img src="images/busyrun.webp" alt="Busy Run" style="width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
     </div>
 </section>
+</div>
 
+<div class="maincontent4-section">
 <section class="intro">
     <div class="intro-text">
         <h2>Ski Lodge</h2>
         <p>Whether you're headed into the lodge for lunch or finishing your day at the bottom of the mountain, this area can be dangerous as people often come speeding right up to the lodge, dodging and swerving through crowds. As you approach, try to slow down and find an open space to stop and remove your skis. Remember to pick them up and place them on the rack instead of leaving them in the snow, as they could blow away or get taken.</p>
         <p>Below is a video covering much of what I've talked about, along with other tips for common skiing etiquette:</p>
     </div>
+</section>
+</div>
+
+<div class="bottomvid">
+<section class="intro">
     <div class="video-section">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2bWwNO7Usf8?si=fcLDc8hkwjWsbh1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 </section>
+</div>
 
+</div>
 <footer> 
     <p>Mountain Etiquette Page By: Ben Raskin</p>
 </footer>
