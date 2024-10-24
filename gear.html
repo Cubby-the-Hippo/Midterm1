@@ -6,7 +6,7 @@
     <title>Skiing Gear</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /*NEW FEATURE 1*/
+        /* Image scaling on hover */
         .intro-img img, .main-content img {
             transition: transform 0.3s ease-in-out;
         }
@@ -15,15 +15,48 @@
             transform: scale(1.1); 
         }
 
-        /*NEW FEATURE 2*/
+        /* Text shadow for headings */
         h1, h3 {
             text-shadow: 0 0 5px #fff, 0 0 10px #ff7b7b, 0 0 15px #ff7b7b;
         }
 
-        /*NEW FEATURE 3*/
+        /* Hover effect for headings */
         h1:hover, h3:hover {
             text-shadow: 0 0 10px #fff, 0 0 20px #ffb6b6, 0 0 30px #ffb6b6;
             color: #ffb6b6;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: lightgray;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Text image row styling */
+        .text-img-row {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .video-section {
+            text-align: center;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -47,9 +80,7 @@
 
     <section class="intro">
         <div class="intro-text">
-            <p>
-                Before hitting the slopes, it's crucial to ensure you have all the right gear. This page outlines the essential equipment you'll need for a safe and enjoyable skiing experience. From skis to helmets, we'll walk you through the key items.
-            </p>
+            <p>Before hitting the slopes, it's crucial to ensure you have all the right gear. This page outlines the essential equipment you'll need for a safe and enjoyable skiing experience. From skis to helmets, we'll walk you through the key items.</p>
         </div>
         <div class="intro-img">
             <img src="images/overview_gear.jpg" alt="Overview of Skiing Gear">
@@ -59,42 +90,41 @@
     <section class="main-content">
         <div class="main-text">
             <h3>Essential Skiing Gear</h3>
-            <p>Here is a look at all the essential skiing gear that you will need to stay safe and perform at your best on the mountain.
-                <table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; background-color: lightgray;">
-                    <tr>
-                        <th>Item</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Skis</td>
-                        <td>The most important part of your gear, chosen based on skill level and terrain.</td>
-                    </tr>
-                    <tr>
-                        <td>Helmet</td>
-                        <td>Protects your head from injury; it should fit comfortably for long periods.</td>
-                    </tr>
-                    <tr>
-                        <td>Goggles</td>
-                        <td>Protects your eyes from sun, snow, and wind. Look for anti-fog features.</td>
-                    </tr>
-                    <tr>
-                        <td>Ski Poles</td>
-                        <td>Used to maintain balance and propel yourself; the right height is important.</td>
-                    </tr>
-                    <tr>
-                        <td>Ski Socks</td>
-                        <td>Keep your feet warm and dry, essential for comfort during skiing.</td>
-                    </tr>
-                    <tr>
-                        <td>Outer Jacket</td>
-                        <td>Waterproof and insulated to keep you warm in cold, snowy conditions.</td>
-                    </tr>
-                    <tr>
-                        <td>Ski Boots</td>
-                        <td>Provide stability and control; they should be fitted to your foot size.</td>
-                    </tr>
-                </table>
-            </p>
+            <p>Here is a look at all the essential skiing gear that you will need to stay safe and perform at your best on the mountain:</p>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Skis</td>
+                    <td>The most important part of your gear, chosen based on skill level and terrain.</td>
+                </tr>
+                <tr>
+                    <td>Helmet</td>
+                    <td>Protects your head from injury; it should fit comfortably for long periods.</td>
+                </tr>
+                <tr>
+                    <td>Goggles</td>
+                    <td>Protects your eyes from sun, snow, and wind. Look for anti-fog features.</td>
+                </tr>
+                <tr>
+                    <td>Ski Poles</td>
+                    <td>Used to maintain balance and propel yourself; the right height is important.</td>
+                </tr>
+                <tr>
+                    <td>Ski Socks</td>
+                    <td>Keep your feet warm and dry, essential for comfort during skiing.</td>
+                </tr>
+                <tr>
+                    <td>Outer Jacket</td>
+                    <td>Waterproof and insulated to keep you warm in cold, snowy conditions.</td>
+                </tr>
+                <tr>
+                    <td>Ski Boots</td>
+                    <td>Provide stability and control; they should be fitted to your foot size.</td>
+                </tr>
+            </table>
         </div>
         <div class="intro-img">
             <img src="images/all_gear.jpg" alt="All Skiing Gear Included" style="width: 100%; height: auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
@@ -117,21 +147,21 @@
         <div class="text-img-row">
             <div class="text">
                 <h3>Helmet</h3>
-                <p>A helmet is important for protecting your head from injury. Make sure it fits properly and is comfortable to wear for extended periods of time, like a couple of hours.</p>
+                <p>A helmet is important for protecting your head from injury. Make sure it fits properly and is comfortable to wear for extended periods of time.</p>
             </div>
         </div>
 
         <div class="text-img-row">
             <div class="text">
                 <h3>Goggles</h3>
-                <p>Good vision on the slopes is also important. Ski goggles not only protect your eyes from the sun but also from snow and wind. Look for goggles with anti-fog for a clearer view.</p>
+                <p>Good vision on the slopes is crucial. Ski goggles protect your eyes from the sun, snow, and wind. Look for goggles with anti-fog features for a clearer view.</p>
             </div>
         </div>
 
         <div class="text-img-row">
             <div class="text">
                 <h3>Poles</h3>
-                <p>Ski poles are used to help maintain balance and propel yourself forward. Choose poles that are the right height for your body, usually measuring from the ground to just below your armpits.</p>
+                <p>Ski poles help maintain balance and propel yourself forward. Choose poles that are the right height for your body, usually measuring from the ground to just below your armpits.</p>
             </div>
         </div>
     </section>
@@ -142,5 +172,3 @@
 
 </body>
 </html>
-
-

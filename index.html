@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
-
-<style>table, th, td {
-    border:1px solid black;
-  }</style>
-
 <body>
     <nav>
-
         <ul>
-
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="how.html">How To Ski</a></li>
             <li><a href="types.html">Types of Skis</a></li>
@@ -23,9 +21,7 @@
             <li><a href="etiquette.html">Mountain Etiquette</a></li>
             <li><a href="guide.html">Mountain Guide</a></li>
             <li><a href="resorts.html">U.S. Ski Resorts</a></li>
-
         </ul>
-
     </nav>
 
     <header>
@@ -34,7 +30,7 @@
 
     <section class="intro">
         <div class="intro-text">
-            <p><span class="bounce" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">This is me either doing a backflip or a frontflip I forgot which one since I do too many tricks!🤣</span></p>
+            <p><span class="bounce" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is me either doing a backflip or a frontflip; I forgot which one since I do too many tricks!🤣</span></p>
         </div>
         <div class="intro-img">
             <img src="images/IMG_9432a.1.jpg" alt="Intro Image">
@@ -48,41 +44,48 @@
             <p class="flash" style="margin-top: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Don't be this guy!</p> 
         </div>
         <div class="main-img">
-            <img src="images/istockphoto-501798962-612x612.jpg" alt="snowbank">
+            <img src="images/istockphoto-501798962-612x612.jpg" alt="Snowbank">
         </div>
-            <div class="arrow"></div> 
+        <div class="arrow"></div> 
     </section>
-    
 
     <section class="additional-content">
         <div class="text-img-row">
             <div class="text">
                 <p>These are some of Ben, Ethan, and Reed's skiing fails caught on camera! 😂</p>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2UOB9AfHrPY?si=Z_MU2LqNMFyP6F_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2UOB9AfHrPY?si=Z_MU2LqNMFyP6F_-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
-    <table class="styled-table" style="width:100%">
-        <tr>
-            <th>Who</th>
-            <th>Fail</th>
-            <th>Injury</th>
-        </tr>
-        <tr>
-            <td>Ben Raskin</td>
-            <td>Face first into snowbank after going 200 MPH+</td>
-            <td>Destroyed the snowbank</td>
-        </tr>
-        <tr>
-            <td>Ethan Lu</td>
-            <td>Attempted to do a cork 720 on one leg and went face first into a tree</td>
-            <td>Broke the tree</td>
-        </tr>
-            <td>Reed Berry</td>
-            <td>Tried to do a baby jump at the ski park and went face first into the ground</td>
-            <td>Hurt feelings</td>
-      </table>
+    <table class="styled-table" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>Who</th>
+                <th>Fail</th>
+                <th>Injury</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ben Raskin</td>
+                <td>Face first into snowbank after going 200 MPH+</td>
+                <td>Destroyed the snowbank</td>
+            </tr>
+            <tr>
+                <td>Ethan Lu</td>
+                <td>Attempted to do a cork 720 on one leg and went face first into a tree</td>
+                <td>Broke the tree</td>
+            </tr>
+            <tr>
+                <td>Reed Berry</td>
+                <td>Tried to do a baby jump at the ski park and went face first into the ground</td>
+                <td>Hurt feelings</td>
+            </tr>
+        </tbody>
+    </table>
 
     <footer>
         <p>Alex Peng</p>
