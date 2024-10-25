@@ -153,6 +153,7 @@ footer {
     100% { opacity: 1; }
 }
 
+/* NEW FEATURE */
 .arrow {
     width: 20px;  
     height: 150px; 
@@ -163,7 +164,7 @@ footer {
     transform: rotate(270deg); 
     animation: bounce-arrow 1.5s infinite;
 }
-
+/* NEW FEATURE */
 
 .arrow:after {
     content: '';
